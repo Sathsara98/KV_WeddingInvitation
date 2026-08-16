@@ -1323,6 +1323,18 @@
                 font-size: 26px;
             }
         }
+
+        section.details-section.rsvp-section {
+            background: linear-gradient(160deg, #6d0817, #3f0710);
+        }
+
+        .rsvp-section .section-title {
+            color: var(--gold-2);
+        }
+
+        .rsvp-section .section-subtitle {
+            color: #f6dfc6;
+        }
     </style>
 </head>
 
@@ -1453,6 +1465,51 @@
             </div>
         </section>
 
+        <section class="details-section rsvp-section">
+            <div class="container">
+                <div class="ornament-line">✦</div>
+                <h2 class="section-title">RSVP</h2>
+                <p class="section-subtitle">Kindly let us know if you will be able to join us for our wedding
+                    celebration.</p>
+                <form class="rsvp-card rsvp-form" id="rsvp">
+                    <h3>Kindly RSVP</h3>
+                    <div class="form-grid">
+                        <label class="form-field"><input type="text" id="FName" name="FName"
+                                placeholder="First Name"></label>
+                        <label class="form-field"><input type="text" id="LName" name="LName"
+                                placeholder="Last Name"></label>
+                        <label class="form-field"><input type="number" id="Guests" name="Guests"
+                                placeholder="No. of Guests"></label>
+                        <label class="form-field"><input type="tel" placeholder="Phone Number" name="PhoneNumber"
+                                id="PhoneNumber" pattern="[0-9]{10}" maxlength="10" /></label>
+                        <div class="come-wrap">
+                            <label for="Response" class="d-flex">Will you come?</label>
+                            <div class="check-wrapper">
+                                <div><input type="radio" id="Response1" name="Response" value="Yes, I will" required>
+                                    <label for="Response1">Yes, I will</label><br>
+                                </div>
+
+                                <div><input type="radio" id="Response2" name="Response" value="Unfortunately, I am not">
+                                    <label for="Response2">Unfortunately, I cannot</label><br>
+                                </div>
+
+                                <div><input type="radio" id="Response3" name="Response"
+                                        value="I will tell you a bit later">
+                                    <label for="Response3">I will let you know
+                                        later</label><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button class="rsvp-btn" type="submit">Reserve My Seat</button>
+                    </div>
+                    <p class="form-note" id="formNote">We look forward to celebrating with you.</p>
+                </form>
+
+        </section>
+
+
         <section class="details-section" id="details">
             <div class="container">
                 <div class="ornament-line">✦</div>
@@ -1572,49 +1629,6 @@
             </div>
         </section>
 
-        <section class="details-section rsvp-section">
-            <div class="container">
-                <div class="ornament-line">✦</div>
-                <h2 class="section-title">RSVP</h2>
-                <p class="section-subtitle">Kindly let us know if you will be able to join us for our wedding
-                    celebration.</p>
-                <form class="rsvp-card rsvp-form" id="rsvp">
-                    <h3>Kindly RSVP</h3>
-                    <div class="form-grid">
-                        <label class="form-field"><input type="text" id="FName" name="FName"
-                                placeholder="First Name"></label>
-                        <label class="form-field"><input type="text" id="LName" name="LName"
-                                placeholder="Last Name"></label>
-                        <label class="form-field"><input type="number" id="Guests" name="Guests"
-                                placeholder="No. of Guests"></label>
-                        <label class="form-field"><input type="tel" placeholder="Phone Number" name="PhoneNumber"
-                                id="PhoneNumber" pattern="[0-9]{10}" maxlength="10" /></label>
-                        <div class="come-wrap">
-                            <label for="Response" class="d-flex">Will you come?</label>
-                            <div class="check-wrapper">
-                                <div><input type="radio" id="Response1" name="Response" value="Yes, I will" required>
-                                    <label for="Response1">Yes, I will</label><br>
-                                </div>
-
-                                <div><input type="radio" id="Response2" name="Response" value="Unfortunately, I am not">
-                                    <label for="Response2">Unfortunately, I cannot</label><br>
-                                </div>
-
-                                <div><input type="radio" id="Response3" name="Response"
-                                        value="I will tell you a bit later">
-                                    <label for="Response3">I will let you know
-                                        later</label><br><br>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <button class="rsvp-btn" type="submit">Reserve My Seat</button>
-                    </div>
-                    <p class="form-note" id="formNote">We look forward to celebrating with you.</p>
-                </form>
-
-        </section>
 
         <section class="location-section" id="location">
             <div class="container">
